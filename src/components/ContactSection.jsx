@@ -73,6 +73,7 @@ const ContactSection = () => {
                   />
 
                   <Button
+                    type="submit"
                     className="mt-4 px-4 py-2 fw-bold"
                     style={{
                       background: "#00e5ff",
@@ -94,9 +95,7 @@ const ContactSection = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <div
-                  className="p-4 bg-white rounded-4 border border-secondary text-dark"
-                >
+                <div className="p-4 bg-white rounded-4 border border-secondary text-dark">
                   <h5 className="text-info fw-bold mb-2">Contact Info</h5>
 
                   <p className="text-secondary mb-2">info@mercurytech.in</p>
