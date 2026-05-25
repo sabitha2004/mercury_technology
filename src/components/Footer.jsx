@@ -199,7 +199,7 @@ const Footer = () => {
             letterSpacing: "0.5px",
           }}
         >
-          © 2026 MERCURY TECHNOLOGY.
+          © 2024 MERCURY TECHNOLOGY.
           Crafted with innovation.
         </div>
       </Container>
