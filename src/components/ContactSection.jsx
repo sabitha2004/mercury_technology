@@ -103,12 +103,12 @@ const ContactSection = () => {
 
                   <h6 className="text-info mt-2">Office Location</h6>
 
-                  <p className="text-secondary mb-3">Thanjavur, Tamil Nadu</p>
+                  <p className="text-secondary mb-3">Coimbatore, Tamil Nadu</p>
 
                   {/* GOOGLE MAP */}
                   <iframe
-                    title="Thanjavur Location"
-                    src="https://www.google.com/maps?q=Thanjavur,TamilNadu&output=embed"
+                    title="Coimbatore Location"
+                    src="https://www.google.com/maps?q=Coimbatore,TamilNadu&output=embed"
                     width="100%"
                     height="190"
                     style={{

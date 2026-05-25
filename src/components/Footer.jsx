@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  Container,
-  Form,
-  Button,
-} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import {
   FaInstagram,
   FaLinkedinIn,
-  FaPaperPlane,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -19,67 +14,55 @@ const Footer = () => {
         color: "#111111",
         paddingTop: "50px",
         paddingBottom: "30px",
+        overflowX: "hidden",
       }}
     >
       <Container>
-        {/* MAIN DIV */}
-        <div className="d-flex flex-column flex-lg-row justify-content-between gap-2">
 
-          {/* BRAND */}
-          <div style={{ maxWidth: "250px" }}>
-            <h2
-              className="fw-bold text-info mb-2"
-              style={{
-                fontSize: "42px",
-                letterSpacing: "1px",
-              }}
-            >
-              MERCURY.
-            </h2>
+        {/* LOGO */}
+        <div className="text-center mb-5">
+          <h2
+            className="fw-bold text-info"
+            style={{
+              fontSize: "42px",
+              letterSpacing: "1px",
+            }}
+          >
+            MERCURY.
+          </h2>
+        </div>
 
-            <h4 className="fw-semibold text-dark mb-2">
-              About Us
-            </h4>
+        {/* MAIN CONTENT */}
+        <div
+          className="d-flex flex-row justify-content-center align-items-start flex-wrap"
+          style={{
+            gap: "60px",
+          }}
+        >
+          {/* ABOUT */}
+          <div className="text-center">
+            <h5 className="fw-semibold text-dark mb-3">
+              About
+            </h5>
 
             <p
               style={{
                 color: "#7b8794",
                 fontSize: "15px",
+                maxWidth: "250px",
               }}
             >
-              Global Software Powerhouse driving digital
-              transformation through strategic innovation
-              and intelligent software solutions.
+              Global Software Powerhouse driving
+              digital transformation through
+              intelligent software solutions.
             </p>
           </div>
 
-          {/* CONTACT */}
-          <div style={{ maxWidth: "250px" }}>
-            <h4 className="fw-semibold text-dark mb-2">
-              Contact Info
-            </h4>
-
-            <div
-              style={{
-                color: "#7b8794",
-                fontSize: "15px",
-              }}
-            >
-              <p>
-                Address : Mercury Technology,
-                Thanjavur, Tamil Nadu.
-              </p>
-              <p>
-                Email : info@mercurytech.in
-              </p>
-            </div>
-          </div>
-
-          {/* LINKS */}
-          <div style={{ minWidth: "180px" }}>
-            <h4 className="fw-semibold text-dark mb-2">
-              Important Link
-            </h4>
+          {/* IMPORTANT LINKS */}
+          <div className="text-center">
+            <h5 className="fw-semibold text-dark mb-3">
+              Important Links
+            </h5>
 
             <div className="d-flex flex-column gap-2">
               {[
@@ -104,11 +87,22 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* NEWSLETTER */}
-          <div style={{ maxWidth: "320px" }}>
-            <h4 className="fw-semibold text-dark mb-2">
-              Newsletter
-            </h4>
+          {/* CONTACT INFO */}
+          <div className="text-center">
+            <h5 className="fw-semibold text-dark mb-3">
+              Contact Info
+            </h5>
+
+            <p
+              style={{
+                color: "#7b8794",
+                fontSize: "15px",
+                marginBottom: "5px",
+              }}
+            >
+              Mercury Technology,
+              Coimbatore, Tamil Nadu.
+            </p>
 
             <p
               style={{
@@ -116,95 +110,62 @@ const Footer = () => {
                 fontSize: "15px",
               }}
             >
-              Subscribe to get the latest updates,
-              services, and technology news.
+              info@mercurytech.in
             </p>
 
-            {/* INPUT */}
+            {/* SOCIAL ICONS */}
             <div
-              className="d-flex align-items-center mt-4"
-              style={{
-                background: "#ffffff",
-                borderRadius: "50px",
-                overflow: "hidden",
-                border: "1px solid #dbe4ea",
-              }}
+              className="d-flex justify-content-center gap-3 mt-3"
             >
-              <Form.Control
-                type="email"
-                placeholder="Email Address"
+              <a
+                href="https://www.instagram.com/merc_urytechnology?igsh=NGRxY28wYnBnenJk"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
-                  border: "none",
-                  boxShadow: "none",
-                  padding: "14px 20px",
-                  fontSize: "14px",
-                }}
-              />
-
-              <Button
-                style={{
-                  width: "60px",
-                  height: "50px",
-                  border: "none",
-                  borderRadius: "50px",
-                  background:
-                    "linear-gradient(135deg, #00c6ff, #0072ff)",
+                  color: "#7b8794",
+                  fontSize: "20px",
+                  textDecoration: "none",
                 }}
               >
-                <FaPaperPlane />
-              </Button>
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/mercury-technology-9a2771409/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#7b8794",
+                  fontSize: "20px",
+                  textDecoration: "none",
+                }}
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* BOTTOM LINE */}
+        {/* LINE */}
         <hr
           style={{
-            marginTop: "60px",
+            marginTop: "35px",
             borderColor: "#dbe4ea",
           }}
         />
 
-        {/* BOTTOM */}
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
-          <div
-            style={{
-              color: "#7b8794",
-              fontSize: "14px",
-            }}
-          >
-            © 2026 MERCURY TECHNOLOGY. All rights reserved.
-          </div>
-
-          {/* SOCIAL ICONS */}
-          <div className="d-flex gap-4 mt-3 mt-md-0">
-            <a
-              href="https://www.instagram.com/merc_urytechnology?igsh=NGRxY28wYnBnenJk"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#7b8794",
-                fontSize: "18px",
-                textDecoration: "none",
-              }}
-            >
-              <FaInstagram />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/mercury-technology-9a2771409/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#7b8794",
-                fontSize: "18px",
-                textDecoration: "none",
-              }}
-            >
-              <FaLinkedinIn />
-            </a>
-          </div>
+        {/* COPYRIGHT */}
+        <div
+          className="text-center"
+          style={{
+            color: "#7b8794",
+            fontSize: "14px",
+          }}
+        >
+          © 2026 MERCURY TECHNOLOGY.
+          All rights reserved.
         </div>
+
       </Container>
     </footer>
   );

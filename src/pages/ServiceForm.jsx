@@ -54,19 +54,7 @@ const ServiceForm = () => {
                   to build something amazing.
                 </p>
 
-                {/* <div className="mt-5">
-                  <div className="mb-4">
-                    <h6 className="fw-bold">Email</h6>
-
-                    <p className="mb-0">info@mercurytech.in</p>
-                  </div>
-
-                  <div>
-                    <h6 className="fw-bold">Location</h6>
-
-                    <p className="mb-0">Thanjavur, Tamil Nadu</p>
-                  </div>
-                </div> */}
+               
               </div>
             </Col>
 
