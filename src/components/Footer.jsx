@@ -10,64 +10,79 @@ const Footer = () => {
   return (
     <footer
       style={{
-        background: "#f8fbfd",
-        color: "#111111",
-        paddingTop: "50px",
-        paddingBottom: "30px",
-        overflowX: "hidden",
+        background:
+          "linear-gradient(180deg, #f8fbfd 0%, #e0e2e6 100%)",
+        paddingTop: "70px",
+        paddingBottom: "25px",
+        overflow: "hidden",
+        position: "relative",
       }}
     >
-      <Container>
+      {/* BLUR EFFECT */}
+      <div
+        style={{
+          position: "absolute",
+          width: "300px",
+          height: "300px",
+          background: "rgba(0,180,255,0.08)",
+          borderRadius: "50%",
+          top: "-120px",
+          right: "-100px",
+          filter: "blur(80px)",
+        }}
+      />
 
-        {/* LOGO */}
-        <div className="text-center mb-5">
-          <h2
-            className="fw-bold text-info"
+      <Container style={{ position: "relative", zIndex: 2 }}>
+        {/* TOP */}
+        <div
+          className="d-flex flex-column flex-lg-row justify-content-between align-items-center"
+          style={{
+            gap: "50px",
+          }}
+        >
+          {/* LEFT */}
+          <div className="text-center text-lg-start">
+            <h1
+              className="fw-bold text-dark"
             style={{
-              fontSize: "42px",
+              fontSize: "20px",
               letterSpacing: "1px",
             }}
           >
-            MERCURY.
-          </h2>
-        </div>
-
-        {/* MAIN CONTENT */}
-        <div
-          className="d-flex flex-row justify-content-center align-items-start flex-wrap"
-          style={{
-            gap: "60px",
-          }}
-        >
-          {/* ABOUT */}
-          <div className="text-center">
-            <h5 className="fw-semibold text-dark mb-3">
-              About
-            </h5>
+            MERCURY <span className="text-info">TECHNOLOGY</span>
+            </h1>
 
             <p
               style={{
-                color: "#7b8794",
+                color: "#6b7280",
+                maxWidth: "420px",
                 fontSize: "15px",
-                maxWidth: "250px",
+                lineHeight: "1.9",
+                marginTop: "15px",
               }}
             >
-              Global Software Powerhouse driving
-              digital transformation through
-              intelligent software solutions.
+              Building innovative digital experiences
+              with modern technology solutions for
+              businesses worldwide.
             </p>
           </div>
 
-          {/* IMPORTANT LINKS */}
+          {/* CENTER LINKS */}
           <div className="text-center">
-            <h5 className="fw-semibold text-dark mb-3">
-              Important Links
+            <h5
+              className="fw-semibold mb-4"
+              style={{
+                color: "#111827",
+              }}
+            >
+              Navigation
             </h5>
 
-            <div className="d-flex flex-column gap-2">
+            <div
+              className="d-flex flex-column gap-3"
+            >
               {[
                 "Home",
-                "About",
                 "Services",
                 "Solutions",
                 "Contact",
@@ -76,9 +91,10 @@ const Footer = () => {
                   key={i}
                   href={`#${item.toLowerCase()}`}
                   style={{
-                    color: "#7b8794",
+                    color: "#6b7280",
                     textDecoration: "none",
                     fontSize: "15px",
+                    transition: "0.3s",
                   }}
                 >
                   {item}
@@ -87,44 +103,55 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* CONTACT INFO */}
-          <div className="text-center">
-            <h5 className="fw-semibold text-dark mb-3">
-              Contact Info
+          {/* RIGHT */}
+          <div className="text-center text-lg-start">
+            <h5
+              className="fw-semibold mb-4"
+              style={{
+                color: "#111827",
+              }}
+            >
+              Contact
             </h5>
 
             <p
               style={{
-                color: "#7b8794",
+                color: "#6b7280",
                 fontSize: "15px",
-                marginBottom: "5px",
+                marginBottom: "10px",
               }}
             >
-              Mercury Technology,
-              Coimbatore, Tamil Nadu.
+              Coimbatore, Tamil Nadu
             </p>
 
             <p
               style={{
-                color: "#7b8794",
+                color: "#6b7280",
                 fontSize: "15px",
+                marginBottom: "20px",
               }}
             >
               info@mercurytech.in
             </p>
 
-            {/* SOCIAL ICONS */}
-            <div
-              className="d-flex justify-content-center gap-3 mt-3"
-            >
+            {/* SOCIAL */}
+            <div className="d-flex justify-content-center justify-content-lg-start gap-3">
               <a
                 href="https://www.instagram.com/merc_urytechnology?igsh=NGRxY28wYnBnenJk"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  color: "#7b8794",
-                  fontSize: "20px",
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "50%",
+                  background: "#ffffff",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#111827",
                   textDecoration: "none",
+                  boxShadow:
+                    "0 8px 20px rgba(0,0,0,0.08)",
                 }}
               >
                 <FaInstagram />
@@ -135,9 +162,17 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  color: "#7b8794",
-                  fontSize: "20px",
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "50%",
+                  background: "#ffffff",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#111827",
                   textDecoration: "none",
+                  boxShadow:
+                    "0 8px 20px rgba(0,0,0,0.08)",
                 }}
               >
                 <FaLinkedinIn />
@@ -149,23 +184,24 @@ const Footer = () => {
         {/* LINE */}
         <hr
           style={{
-            marginTop: "35px",
+            marginTop: "50px",
+            marginBottom: "20px",
             borderColor: "#dbe4ea",
           }}
         />
 
-        {/* COPYRIGHT */}
+        {/* BOTTOM */}
         <div
           className="text-center"
           style={{
-            color: "#7b8794",
+            color: "#9ca3af",
             fontSize: "14px",
+            letterSpacing: "0.5px",
           }}
         >
           © 2026 MERCURY TECHNOLOGY.
-          All rights reserved.
+          Crafted with innovation.
         </div>
-
       </Container>
     </footer>
   );
