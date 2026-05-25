@@ -6,8 +6,6 @@ import HeroSection from "../components/HomeSection";
 import ServiceSection from "../components/ServiceSection";
 import SolutionsSection from "../components/SolutionSection";
 
-
-
 function Home() {
   return (
     <>

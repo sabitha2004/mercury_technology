@@ -38,7 +38,7 @@ const HomeSection = () => {
             <motion.h1
               className="fw-bold lh-1"
               style={{
-                fontSize: "clamp(55px, 9vw, 110px)",
+                fontSize: "clamp(45px, 9vw, 110px)",
               }}
               initial={{
                 opacity: 0,
