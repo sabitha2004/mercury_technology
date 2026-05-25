@@ -35,18 +35,18 @@ const ServiceForm = () => {
                 style={{
                   background: "linear-gradient(135deg, #0d6efd, #5ea2ff)",
                   height: "100%",
-                  padding: "50px 35px",
+                  padding: "40px 35px",
                   color: "#fff",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
                 }}
               >
-                <h2 className="fw-bold mb-4">Service Request</h2>
+                <h2 className="fw-bold mb-2">Service Request</h2>
 
                 <p
                   style={{
-                    lineHeight: "1.9",
+                    lineHeight: "1.5",
                     opacity: 0.9,
                   }}
                 >
@@ -54,7 +54,7 @@ const ServiceForm = () => {
                   to build something amazing.
                 </p>
 
-                <div className="mt-5">
+                {/* <div className="mt-5">
                   <div className="mb-4">
                     <h6 className="fw-bold">Email</h6>
 
@@ -66,7 +66,7 @@ const ServiceForm = () => {
 
                     <p className="mb-0">Thanjavur, Tamil Nadu</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Col>
 
